@@ -47,7 +47,7 @@ export default function Header() {
           {/* bouton mobile */}
 
           <button
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
             onClick={() => setOpen(!open)}
           >
 
@@ -67,19 +67,19 @@ export default function Header() {
 
           <nav className="flex flex-col p-4 space-y-3">
 
-            <a href="#" className="hover:text-pink-600">
+            <a href="/" className="hover:text-pink-600">
               Accueil
             </a>
 
-            <a href="#" className="hover:text-pink-600">
+            <a href="/calendar" className="hover:text-pink-600">
               Calendrier
             </a>
 
-            <a href="#" className="hover:text-pink-600">
+            <a href="/history" className="hover:text-pink-600">
               Historique
             </a>
 
-            <a href="#" className="hover:text-pink-600">
+            <a href="/advice" className="hover:text-pink-600">
               Conseils
             </a>
 

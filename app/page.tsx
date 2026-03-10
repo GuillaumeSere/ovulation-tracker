@@ -80,13 +80,14 @@ export default function Home() {
     return (
 
         <main
-            className="relative text-gray-900 min-h-screen flex justify-center items-center p-10 bg-cover bg-center"
+            className="relative text-gray-900 min-h-screen flex justify-center mx-auto items-center p-10 bg-cover bg-center"
             style={{
-                backgroundImage: "url('/baby-background.jpg')"
+                backgroundImage: "url('/baby-background.jpg')",
+                backgroundAttachment: "fixed"
             }}
         >
           
-            <div className="max-w-3xl w-full bg-[#ffffff24] border p-2 border-[#ffffff24p-6 rounded shadow">
+            <div className="max-w-3xl w-full bg-[#ffffff67] p-6 rounded shadow">
 
                 <h1 className="text-2xl font-bold mb-4 text-center">
                     Ovulation Tracker

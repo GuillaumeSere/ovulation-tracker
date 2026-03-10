@@ -22,7 +22,7 @@ export default function HistoryPage() {
   return (
     <main className="min-h-screen  text-gray-900 flex justify-center p-10">
 
-      <div className="max-w-3xl w-full bg-[#ffffff24] p-6 rounded shadow">
+      <div className="max-w-3xl w-full bg-[#ffffff67] p-6 rounded shadow">
 
         <h1 className="text-2xl font-bold mb-6 text-center text-pink-600">
           Historique des cycles

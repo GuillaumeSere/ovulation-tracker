@@ -8,7 +8,7 @@ export default function Footer() {
 
         {/* Left */}
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} CycleCare. Tous droits réservés.
+          &copy; {new Date().getFullYear()} Ovulation Tracker. Tous droits réservés.
         </p>
 
         {/* Right - liens */}

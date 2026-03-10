@@ -21,8 +21,20 @@
 
 body {
     background: url('/baby-background.jpg') no-repeat center center fixed;
-  background-attachment: fixed;
   background-size: cover; 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.fc-event-title {
+  white-space: normal !important;
+  font-size: 12px;
+}
+
+.fc-daygrid-event {
+  white-space: normal !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  min-height: 100px;
 }

@@ -5,19 +5,21 @@ import dayGridPlugin from "@fullcalendar/daygrid"
 
 export default function CycleCalendar({ events }: any) {
 
-  return (
+    return (
 
-    <div className="mt-8">
+        <div className="mt-8">
 
-      <FullCalendar
-        plugins={[dayGridPlugin]}
-        initialView="dayGridMonth"
-        events={events}
-        height="auto"
-      />
+            <FullCalendar
+                plugins={[dayGridPlugin]}
+                initialView="dayGridMonth"
+                events={events}
+                height="auto"
+                dayMaxEventRows={false}
+                eventDisplay="block"
+            />
 
-    </div>
+        </div>
 
-  )
+    )
 
 }
