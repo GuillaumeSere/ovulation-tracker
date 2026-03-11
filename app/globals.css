@@ -38,3 +38,9 @@ body {
 .fc .fc-daygrid-day-frame {
   min-height: 100px;
 }
+
+.goog-te-gadget-simple{
+    padding: 1rem;
+    text-transform: uppercase !important;
+    font-size: 10px !important;
+}
