@@ -41,7 +41,7 @@ export default function CalendarPage() {
   }, [])
 
   return (
-    <main className="min-h-screen text-gray-900 flex justify-center p-10">
+    <main className="relative text-gray-900 flex justify-center items-start sm:items-center bg-cover bg-center">
 
       <div className="max-w-3xl w-full bg-[#ffffff67] p-6 rounded shadow">
 
