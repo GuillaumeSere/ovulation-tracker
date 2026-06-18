@@ -24,7 +24,8 @@ export default function CalendarPage() {
 
       const dates = calculateDates(
         lastCycle.startDate,
-        prediction!.ovulationDay
+        prediction!.ovulationDay,
+        prediction!.averageCycle
       )
 
       const calendarEvents = generateCalendarEvents(

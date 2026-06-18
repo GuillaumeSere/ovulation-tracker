@@ -1,6 +1,7 @@
 export function calculateDates(
   startDate: string,
-  ovulationDay: number
+  ovulationDay: number,
+  cycleLength = 28
 ) {
 
   const start = new Date(startDate)
@@ -15,7 +16,7 @@ export function calculateDates(
   fertileEnd.setDate(ovulation.getDate() + 1)
 
   const nextPeriod = new Date(start)
-  nextPeriod.setDate(start.getDate() + 28)
+  nextPeriod.setDate(start.getDate() + cycleLength)
 
   return {
     ovulation,

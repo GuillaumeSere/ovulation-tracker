@@ -6,6 +6,7 @@ import CyclePrediction from "./components/CyclePrediction"
 import CycleCalendar from "./components/CycleCalendar"
 import FertilityScore from "./components/FertilityScore"
 import ResetDataButton from "./components/ResetDataButton"
+import PhaseAdvice from "./components/PhaseAdvice"
 
 import { getCycles } from "./utils/storage"
 import { predictCycle } from "./utils/predictCycle"
@@ -28,7 +29,8 @@ export default function Home() {
 
             const dates = calculateDates(
                 lastCycle.startDate,
-                prediction!.ovulationDay
+                prediction!.ovulationDay,
+                prediction!.averageCycle
             )
 
             setOvulationDate(dates.ovulation)
@@ -55,7 +57,8 @@ export default function Home() {
 
         const dates = calculateDates(
             lastCycle.startDate,
-            prediction!.ovulationDay
+            prediction!.ovulationDay,
+            prediction!.averageCycle
         )
 
         setOvulationDate(dates.ovulation)
@@ -101,6 +104,8 @@ export default function Home() {
 
                 {/* Score de fertilité aujourd'hui */}
                 {ovulationDate && <FertilityScore ovulation={ovulationDate} />}
+
+                <PhaseAdvice cycles={cycles} />
 
                 {/* Calendrier visuel */}
                 <CycleCalendar events={events} />
